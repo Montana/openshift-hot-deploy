@@ -1,18 +1,8 @@
-sudo: false
-
-# http://docs.travis-ci.com/user/languages/java/
 language: java
-jdk:
-  - oraclejdk8
-  
-# http://docs.travis-ci.com/user/build-lifecycle/  
-before_install:
-  - npm install -g bower  
+jdk: oraclejdk8
 
-# http://docs.travis-ci.com/user/notifications/
-notifications:
-  email: false
-
-# http://docs.travis-ci.com/user/deployment/openshift/
 deploy:
   provider: openshift
+  
+install: skip
+script: skip
