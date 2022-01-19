@@ -1,8 +1,8 @@
-# openshift-hot-deploy
+## OpenShift & Hot Deploys
+
 Testing an OpenShift `hot_deploy` on Travis CI.
 
 ## Perform the following steps to enable hot deployment in OpenShift
-
 
 Open the CLI, and navigate to the directory where you want to create the application. To create a new, let's say `Montanas HotDeployment` application, execute the following command. If you already have an OpenShift Java application, then you can work with that as well. Have a look at the following command: 
 
