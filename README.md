@@ -19,6 +19,11 @@ rhc app-configure <app> auto-deploy
 rhc app-configure <app> no-auto-deploy
 ```
 
+## Hot Deploy on GCP Flowchart
+
+![image](https://user-images.githubusercontent.com/20936398/150073581-14ead42e-01d0-4154-b4e3-b79307f89103.png)
+
+
 ## Perform the following steps to enable hot deployment in OpenShift
 
 Open the CLI, and navigate to the directory where you want to create the application. To create a new, let's say `Montanas HotDeployment` application, execute the following command. If you already have an OpenShift Java application, then you can work with that as well. Have a look at the following command: 
