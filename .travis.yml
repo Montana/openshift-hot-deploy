@@ -1,6 +1,6 @@
 language: java
 
-deploy: 
+deploy: skip
   provider: openshift
   
 install: skip
