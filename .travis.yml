@@ -1,7 +1,6 @@
 language: java
 
-deploy: skip
-  provider: openshift
+provider: openshift
   
 install: skip
 script: echo "hot_deploy deployed"
