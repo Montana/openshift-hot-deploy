@@ -1,4 +1,4 @@
-<img width="1182" alt="Screen Shot 2022-01-18 at 8 22 09 PM" src="https://user-images.githubusercontent.com/20936398/150063681-4fcb4002-acd0-4fa9-8fbf-4dd01819c183.png">
+<img width="953" alt="Screen Shot 2022-01-18 at 8 26 44 PM" src="https://user-images.githubusercontent.com/20936398/150064108-a4d6f504-eaba-468c-a2de-9c631a92087a.png">
 
 _Current OpenShift instance I have running - it's currently running Travis CI and Mongo on CentOS_.
 
