@@ -18,7 +18,7 @@ touch .openshift/markers/hot_deploy
 Add the new file to the Git repository index, commit it to the local repository, and then push the changes to the application's remote Git repository: 
 
 ```bash
-git add .openshift/markers/hot_deploy $ git commit –am "enabled hot deployment
+git add .openshift/markers/hot_deploy $ git commit –am "enabled hot_deploy"
 ```
 
 ## OpenShift Support of `hot_deploys`
