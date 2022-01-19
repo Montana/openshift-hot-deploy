@@ -3,4 +3,4 @@ language: java
 provider: openshift
   
 install: skip
-script: echo "hot_deploy deployed"
+script: echo "hot_deploy successfully deployed"
