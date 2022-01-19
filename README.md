@@ -1,3 +1,7 @@
+<img width="1182" alt="Screen Shot 2022-01-18 at 8 22 09 PM" src="https://user-images.githubusercontent.com/20936398/150063681-4fcb4002-acd0-4fa9-8fbf-4dd01819c183.png">
+
+_Current OpenShift instance I have running - it's currently running Travis CI and Mongo on CentOS_.
+
 ## OpenShift & Hot Deploys
 
 Testing an OpenShift `hot_deploy` on Travis CI. If your repository contains `.openshift/markers/hot_deploy`, when you perform a `git push` OpenShift will not rebuild the application and perform a hot deployment instead.
