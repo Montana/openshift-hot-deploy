@@ -1,2 +1,2 @@
 # openshift-hot-deploy
-Testing OpenShift Hot Deploy
+Testing an OpenShift `hot_deploy` on Travis CI.
