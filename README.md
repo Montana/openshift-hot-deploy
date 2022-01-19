@@ -1,6 +1,19 @@
 ## OpenShift & Hot Deploys
 
-Testing an OpenShift `hot_deploy` on Travis CI.
+Testing an OpenShift `hot_deploy` on Travis CI. If your repository contains `.openshift/markers/hot_deploy`, when you perform a `git push` OpenShift will not rebuild the application and perform a hot deployment instead.
+
+## Apache Tomcat/Lucene
+
+Copy changed files into the running container. This is the fast way to update a container, however the target container must support hot deploy, too so that it makes sense. Most application servers like Tomcat/Lucene supports this.
+
+## No hot deploy, okay I want a hot deploy
+
+Alternatively you can use the following rhc in (RHEL) commands to enable and disable auto-deployment, and disable and enable hot deploys.
+
+```bash
+rhc app-configure <app> auto-deploy
+rhc app-configure <app> no-auto-deploy
+```
 
 ## Perform the following steps to enable hot deployment in OpenShift
 
@@ -21,7 +34,7 @@ Add the new file to the Git repository index, commit it to the local repository,
 git add .openshift/markers/hot_deploy $ git commit –am "enabled hot_deploy"
 ```
 
-## OpenShift Support of `hot_deploys`
+## OpenShift support of `hot_deploys`
 
 OpenShift supports `hot deployment`. `Hot deployment` means that you can deploy your changes without the need to restart all the application cartridges (e.g. Apache, Mongo, etc.). 
 
@@ -31,3 +44,6 @@ You can configure the deployment scanner's scan-interval option in `.openshift/c
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1"> <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" deployment-timeout="300" /> </subsystem>
 ```
+## Conclusion
+
+It is possible to deploy the generated `WAR` by manually copying the file to the deploy folder of the target. If the server is running, the `WAR` will deploy automatically via hot deploy. Otherwise, the `WAR` will deploy at the next start of the server.
